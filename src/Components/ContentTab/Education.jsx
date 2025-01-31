@@ -1,5 +1,5 @@
 import React from 'react'
-import MyProfileConstants from '../../assets/MyPortfolioConstants';
+import MyProfileConstants from '../../constants/MyPortfolioConstants';
 import './Content.css'
 
 const Education = () => {

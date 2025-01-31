@@ -62,7 +62,7 @@ const MyProfileConstants = () =>{
             "mobile" : "7674030335",
             "location" : "Tirupati, Andhra Pradesh, India",
             "linkedIn" : "https://in.linkedin.com/in/gandluru-abhishek-07b037201",
-            "github" : "https://www.linkedin.com/in/yourprofile"
+            "github" : "https://github.com/AbhishekGandluru"
         },
         "skills" : {
             "Programming Languages" : ["Java", "JS", "Python"],
@@ -72,25 +72,25 @@ const MyProfileConstants = () =>{
         "Awards" : [
             {
                 "description" : "SPOT Award",
-                "awardPath" : "appviewx_4.jpeg",
+                "awardPath" : "assets/appviewx_4.jpeg",
                 "height" : 113,
                 "width" : 160
             },
             {
                 "description" : "MVP Award",
-                "awardPath" : "appviewx_3.jpeg",
+                "awardPath" : "assets/appviewx_3.jpeg",
                 "height" : 160,
                 "width" : 113 
             },
             {
                 "description" : "SPOT Award",
-                "awardPath" : "appviewx_2.jpeg",
+                "awardPath" : "assets/appviewx_2.jpeg",
                 "height" : 113,
                 "width" : 160
             },
             {
                 "description" : "SPOT Award",
-                "awardPath" : "appviewx_1.jpeg",
+                "awardPath" : "assets/appviewx_1.jpeg",
                 "height" : 113,
                 "width" : 160 
             },

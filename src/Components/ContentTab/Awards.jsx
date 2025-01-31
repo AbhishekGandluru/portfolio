@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import myPortfolioConstants from "../../assets/MyPortfolioConstants";
+import myPortfolioConstants from "../../constants/MyPortfolioConstants";
 import "./Content.css";
 
 const Awards = () => {
@@ -27,7 +27,7 @@ const Awards = () => {
                         <div className="hover-overlay" onClick={()=>{setSelectedPic(award)}}>
                             <div className="description">{award.description}</div>
                         </div>
-                        <img src={(`/src/assets/${award.awardPath}`)} alt="Award" height={award.height?String(award.height):"160px"} width={award.width?String(award.width):"160px"}/>
+                        <img src={award.awardPath} alt="Award" height={award.height?String(award.height):"160px"} width={award.width?String(award.width):"160px"}/>
                     </div>
                 )}
             </div>
@@ -45,7 +45,7 @@ const Awards = () => {
                     onClick={() => setSelectedPic(null)}
                 ></i>
                 <img
-                    src={`/src/assets/${selectedPic.awardPath}`}
+                    src={selectedPic.awardPath}
                     alt="Award"
                     height={selectedPic.height * 5 || "800px"}
                     width={selectedPic.width * 5 || "800px"}

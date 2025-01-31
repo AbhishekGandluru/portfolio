@@ -1,4 +1,4 @@
-import MyPortfolioConstants from "../../assets/MyPortfolioConstants";
+import MyPortfolioConstants from "../../constants/MyPortfolioConstants";
 import './Content.css'
 
 const Experience = () => {
