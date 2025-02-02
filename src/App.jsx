@@ -10,6 +10,7 @@ const App = () => {
   const contentRef = useRef(null);
   const menuItems = ['About', 'Skills', 'Experience', 'Education', 'Awards', 'Contact'];
   const [activeItem, setActiveItem] = useState('');
+  const [isSmallScreen, setSmallScreen] = useState(false);
   useEffect(
     ()=>{
       const target = document.getElementById(activeItem);
@@ -24,6 +25,9 @@ const App = () => {
     const menuTab = menuRef.current;
     const sections = scrollableContainer.querySelectorAll('section');
     let currentTab = "";
+    const handleResize = () => {
+      setSmallScreen(window.innerWidth <= 768);
+    };
     const highlightMenu = () => {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - scrollableContainer.scrollTop;
@@ -39,7 +43,8 @@ const App = () => {
       setActiveItem("");
     }
     scrollableContainer.addEventListener('scroll',highlightMenu);
-    return ()=>{scrollableContainer.removeEventListener('scroll',highlightMenu)}
+    window.addEventListener("resize",handleResize);
+    return ()=>{scrollableContainer.removeEventListener('scroll',highlightMenu); window.removeEventListener('resize',handleResize)}
   },[])
 
 
@@ -49,6 +54,7 @@ const App = () => {
         ref={menuRef}
         menuItems={menuItems} 
         setActiveItem={setActiveItem}
+        isSmallScreen = {isSmallScreen}
       />
       <Content ref={contentRef} setActiveItem={setActiveItem}/>
     </div>

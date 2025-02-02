@@ -1,5 +1,5 @@
 #ContentTab {
-    width: 75%;
+    /* width: 75%; */
     overflow: auto;
     display: flex;
     flex-direction: column;

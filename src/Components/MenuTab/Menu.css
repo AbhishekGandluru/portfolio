@@ -1,11 +1,27 @@
 #MenuTab {
-    width: 25%;
+    min-width: 25%;
     height: 100vh;
     background: linear-gradient(135deg, #2F4F4F 0%, #4B8673 50%, #8FBC8F 100%);
     scrollbar-width: none;
     overflow: auto;
     color: white;
+    transition: 0.5s ease;
     /* animation: gradientShift 30s infinite alternate; */
+}
+.menubar{
+    position: absolute;
+    z-index: 1;
+    font-size: larger;
+    margin: 20px;
+    transition: 1s;
+}
+.menubar:hover{
+    cursor: pointer;
+    font-size: x-large;
+    transition: .3s;
+}
+.fa-x{
+    color:rgba(255,255,255,.5);
 }
 .myProfile{
     margin: 150px 20px 20px 20px;
@@ -52,6 +68,12 @@
         margin:15px 15px;
         font-weight: bolder !important;
     }
+}
+
+.hide{
+    min-width: 0px !important;
+    width: 0px;
+    transition: .5s ease;
 }
 
 @keyframes gradientShift {
